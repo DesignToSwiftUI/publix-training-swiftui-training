@@ -27,6 +27,11 @@
 		46E33C122AE98948006F007E /* Challenge02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C112AE98948006F007E /* Challenge02.swift */; };
 		46E33C152AE98AF8006F007E /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C142AE98AF8006F007E /* RowItem.swift */; };
 		46E33C172AE98B22006F007E /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C162AE98B22006F007E /* SectionHeader.swift */; };
+		46E33C242AEA810B006F007E /* Challenge03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C232AEA810B006F007E /* Challenge03.swift */; };
+		46E33C272AEA814A006F007E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C262AEA814A006F007E /* Article.swift */; };
+		46E33C2B2AEA8290006F007E /* FullArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C2A2AEA8290006F007E /* FullArticleItem.swift */; };
+		46E33C2D2AEA82A1006F007E /* ShortArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C2C2AEA82A1006F007E /* ShortArticleItem.swift */; };
+		46E33C2F2AEA8431006F007E /* ArticleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C2E2AEA8431006F007E /* ArticleHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		46E33C112AE98948006F007E /* Challenge02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge02.swift; sourceTree = "<group>"; };
 		46E33C142AE98AF8006F007E /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
 		46E33C162AE98B22006F007E /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		46E33C232AEA810B006F007E /* Challenge03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge03.swift; sourceTree = "<group>"; };
+		46E33C262AEA814A006F007E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		46E33C2A2AEA8290006F007E /* FullArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullArticleItem.swift; sourceTree = "<group>"; };
+		46E33C2C2AEA82A1006F007E /* ShortArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortArticleItem.swift; sourceTree = "<group>"; };
+		46E33C2E2AEA8431006F007E /* ArticleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +152,7 @@
 			children = (
 				46E33C1E2AEA75EB006F007E /* Challenge01 */,
 				46E33C132AE98AE4006F007E /* Challenge02 */,
+				46E33C222AEA80F1006F007E /* Challenge03 */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -153,6 +164,26 @@
 				466C95C32AE752E000E06355 /* SwiftUIBasicsApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		46E33C222AEA80F1006F007E /* Challenge03 */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C252AEA8128006F007E /* Supporting Views */,
+				46E33C232AEA810B006F007E /* Challenge03.swift */,
+				46E33C262AEA814A006F007E /* Article.swift */,
+			);
+			path = Challenge03;
+			sourceTree = "<group>";
+		};
+		46E33C252AEA8128006F007E /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C2A2AEA8290006F007E /* FullArticleItem.swift */,
+				46E33C2C2AEA82A1006F007E /* ShortArticleItem.swift */,
+				46E33C2E2AEA8431006F007E /* ArticleHeader.swift */,
+			);
+			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,19 +256,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E33C2B2AEA8290006F007E /* FullArticleItem.swift in Sources */,
 				466C95E22AE775F900E06355 /* ColorPickerBasicsII.swift in Sources */,
 				466C95E62AE778B500E06355 /* MenuBasics.swift in Sources */,
 				46BF5BFC2AE85C1B00C42546 /* Challenge01.swift in Sources */,
 				46E33C0E2AE959B3006F007E /* ListExample1.swift in Sources */,
+				46E33C272AEA814A006F007E /* Article.swift in Sources */,
 				466C95E02AE7756C00E06355 /* ColorPickerBasics.swift in Sources */,
 				46E33C152AE98AF8006F007E /* RowItem.swift in Sources */,
 				466C95E42AE776A200E06355 /* LazyVGridBasics.swift in Sources */,
 				46E33C172AE98B22006F007E /* SectionHeader.swift in Sources */,
 				466C95D82AE7563D00E06355 /* ButtonBasics.swift in Sources */,
+				46E33C2F2AEA8431006F007E /* ArticleHeader.swift in Sources */,
 				46E33C102AE96FBB006F007E /* ToggleView.swift in Sources */,
 				466C95D62AE7558D00E06355 /* ImageBasics.swift in Sources */,
 				466C95C42AE752E000E06355 /* SwiftUIBasicsApp.swift in Sources */,
+				46E33C2D2AEA82A1006F007E /* ShortArticleItem.swift in Sources */,
 				466C95DE2AE7674900E06355 /* FormBasics.swift in Sources */,
+				46E33C242AEA810B006F007E /* Challenge03.swift in Sources */,
 				466C95DA2AE75A2100E06355 /* ToggleBasics.swift in Sources */,
 				466C95D22AE752FA00E06355 /* AsyncImageBasics.swift in Sources */,
 				46E33BF12AE94FC9006F007E /* PlaceholderView.swift in Sources */,
