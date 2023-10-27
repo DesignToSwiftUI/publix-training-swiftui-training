@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol GameServiceable {
+protocol GamesServiceable {
     func fetchGames() async -> Result<[Game], RequestError>
 }
 
-struct GameService: HTTPClient, GameServiceable {
+struct GamesService: HTTPClient, GamesServiceable {
     func fetchGames() async -> Result<[Game], RequestError> {
         return await request(endpoint: GamesEndpoint.all, responseModel: [Game].self)
     }

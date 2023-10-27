@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DashboardView: View {
+    @Environment(DataManager.self) private var manager
     @State private var path = NavigationPath()
     
     var body: some View {
@@ -25,9 +26,9 @@ struct DashboardView: View {
         NavigationStack(path: $path) {
             ScrollView {
                 VStack(spacing: 50) {
-                    FeaturedBooksView(title: "Featured Books", books: [])
-                    FeaturedGamesView(title: "Featured Games", games: [])
-                    FeaturedMoviesView(title: "Featured Movies", movies: [])
+                    FeaturedBooksView(title: "Featured Books", books: manager.featuredBooks)
+                    FeaturedGamesView(title: "Featured Games", games: manager.featuredGames)
+                    FeaturedMoviesView(title: "Featured Movies", movies: manager.featuredMovies)
                 }
                 .padding(.top, 30)
                 .safeAreaPadding(.horizontal)

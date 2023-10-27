@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol MoviesServiceable {
+    func fetchMovies() async -> Result<[Movie], RequestError>
+}
+
+struct MoviesService: HTTPClient, MoviesServiceable {
+    func fetchMovies() async -> Result<[Movie], RequestError> {
+        return await request(endpoint: MoviesEndpoint.all, responseModel: [Movie].self)
+    }
+}

@@ -11,7 +11,7 @@ struct BookDetailView: View {
     let book: Book
     
     var body: some View {
-        Text("Title: \(book.name)")
+        Text("Title: \(book.title)")
         
         Divider()
         

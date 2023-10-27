@@ -34,14 +34,20 @@ extension HTTPClient {
                 return .failure(.invalidResponse)
             }
             
+            dump(String(decoding: data, as: UTF8.self))
+            
             switch response.statusCode {
             
             case 200...299:
-                guard let decodeResponse = try? JSONDecoder().decode(responseModel, from: data) else {
+                do {
+                    let decodeResponse = try JSONDecoder().decode(responseModel, from: data)
+                    
+                    return .success(decodeResponse)
+                } catch {
+                    dump(error as? DecodingError)
+                    
                     return .failure(.decodable)
                 }
-                
-                return .success(decodeResponse)
             case 401: return .failure(.invalidResponse)
             default: return .failure(.invalidResponse)
             }

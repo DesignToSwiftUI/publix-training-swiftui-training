@@ -16,9 +16,16 @@ enum GameStatusType: String, Decodable {
 struct Game: Identifiable, Hashable, Decodable {
     var id = UUID()
     var title: String
+    var isFeatured: Bool = false
 //    var status: GameStatusType
 //    var image: String
 //    var abstract: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case isFeatured = "featured"
+    }
 }
 
 extension Game {

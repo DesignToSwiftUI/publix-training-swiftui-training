@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FeaturedBookItem: View {
+    let book: Book
+    
     var body: some View {
         VStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.gray)
             .frame(width: 150, height: 200)
-            Text("The Idiot")
+            Text(book.title)
                 .font(.headline)
             Text("Fyodor Dostoyevsky")
                 .font(.subheadline)
@@ -22,5 +24,5 @@ struct FeaturedBookItem: View {
 }
 
 #Preview {
-    FeaturedBookItem()
+    FeaturedBookItem(book: Book.default)
 }

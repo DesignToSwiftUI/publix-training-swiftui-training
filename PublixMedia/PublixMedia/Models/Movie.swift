@@ -7,24 +7,31 @@
 
 import Foundation
 
-struct Movie: Identifiable, Hashable {
-    let id = UUID()
+struct Movie: Identifiable, Hashable, Decodable {
+    var id = UUID()
     
     var title: String
-    var category: String
-    var rating: String
-    var abstract: String
+    var isFeatured: Bool = false
     
-    init(title: String, category: String, rating: String, abstract: String) {
-        self.title = title
-        self.category = category
-        self.rating = rating
-        self.abstract = abstract
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case isFeatured = "featured"
     }
+//    var category: String
+//    var rating: String
+//    var abstract: String
+    
+//    init(title: String, category: String, rating: String, abstract: String) {
+//        self.title = title
+//        self.category = category
+//        self.rating = rating
+//        self.abstract = abstract
+//    }
 }
 
 extension Movie {
     static var `default`: Movie = {
-        Movie(title: "Jaws II", category: "Drama", rating: "R", abstract: "Desc goes here")
+        Movie(title: "Jaws II")
     }()
 }

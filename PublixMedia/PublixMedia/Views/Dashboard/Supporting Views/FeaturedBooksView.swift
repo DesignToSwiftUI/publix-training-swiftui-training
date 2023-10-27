@@ -17,8 +17,8 @@ struct FeaturedBooksView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
-                    ForEach(0 ..< 5) { item in
-                        FeaturedBookItem()
+                    ForEach(books) { book in
+                        FeaturedBookItem(book: book)
                     }
                 }
             }
