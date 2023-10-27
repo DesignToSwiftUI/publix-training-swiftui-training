@@ -10,7 +10,7 @@ import SwiftUI
 struct GameDetailView: View {
     let game: Game
     var body: some View {
-        Text("Title: \(game.name)")
+        Text("Title: \(game.title)")
     }
 }
 

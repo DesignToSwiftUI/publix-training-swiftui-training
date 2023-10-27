@@ -15,15 +15,15 @@ enum GameStatusType: String, Decodable {
 
 struct Game: Identifiable, Hashable, Decodable {
     var id = UUID()
-    
-    var name: String
-    var status: GameStatusType
-    var image: String
-    var abstract: String
+    var title: String
+//    var status: GameStatusType
+//    var image: String
+//    var abstract: String
 }
 
 extension Game {
     static var `default`: Game {
-        Game(name: "NBA2K24", status: .available, image: "nba", abstract: "Abstract Goes here")
+//        Game(title: "NBA2K24", status: .available, image: "nba", abstract: "Abstract Goes here")
+        Game(title: "NBA2K24")
     }
 }

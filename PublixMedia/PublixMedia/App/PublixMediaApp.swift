@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct PublixMediaApp: App {
+    @State private var manager = DataManager()
+    
     var body: some Scene {
         WindowGroup {
             TabbedView()
+                .environment(manager)
+                .task {
+                    await manager.initializeData()
+                }
         }
     }
 }

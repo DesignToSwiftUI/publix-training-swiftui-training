@@ -36,6 +36,7 @@
 		46E33C8B2AEBF7F5006F007E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C8A2AEBF7F5006F007E /* HTTPClient.swift */; };
 		46E33C8F2AEBFFD6006F007E /* GamesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C8E2AEBFFD6006F007E /* GamesEndpoint.swift */; };
 		46E33C912AEC02A5006F007E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C902AEC02A5006F007E /* GameService.swift */; };
+		46E33C932AEC0EEA006F007E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C922AEC0EEA006F007E /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		46E33C8A2AEBF7F5006F007E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		46E33C8E2AEBFFD6006F007E /* GamesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesEndpoint.swift; sourceTree = "<group>"; };
 		46E33C902AEC02A5006F007E /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		46E33C922AEC0EEA006F007E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				46E33C8D2AEBFF73006F007E /* Endpoints */,
 				46E33C8C2AEBFF62006F007E /* Services */,
 				46E33C832AEBF1B6006F007E /* Base */,
+				46E33C922AEC0EEA006F007E /* DataManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				46E33C3F2AEAA32E006F007E /* ContentView.swift in Sources */,
 				46E33C762AEAE4C5006F007E /* FeaturedBooksView.swift in Sources */,
 				46E33C742AEAE0FD006F007E /* SectionHeaderView.swift in Sources */,
+				46E33C932AEC0EEA006F007E /* DataManager.swift in Sources */,
 				46E33C852AEBF1DD006F007E /* HTTPMethod.swift in Sources */,
 				46E33C592AEAA4A7006F007E /* GamesView.swift in Sources */,
 				46E33C8F2AEBFFD6006F007E /* GamesEndpoint.swift in Sources */,
