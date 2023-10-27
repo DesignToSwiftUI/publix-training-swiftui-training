@@ -30,6 +30,12 @@
 		46E33C7C2AEAF564006F007E /* FeaturedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C7B2AEAF564006F007E /* FeaturedGameItem.swift */; };
 		46E33C7E2AEAF5A3006F007E /* FeaturedMovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C7D2AEAF5A3006F007E /* FeaturedMovieItemView.swift */; };
 		46E33C802AEAF63C006F007E /* FeaturedBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C7F2AEAF63C006F007E /* FeaturedBookItem.swift */; };
+		46E33C852AEBF1DD006F007E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C842AEBF1DD006F007E /* HTTPMethod.swift */; };
+		46E33C872AEBF2C0006F007E /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C862AEBF2C0006F007E /* RequestError.swift */; };
+		46E33C892AEBF4E1006F007E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C882AEBF4E1006F007E /* Endpoint.swift */; };
+		46E33C8B2AEBF7F5006F007E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C8A2AEBF7F5006F007E /* HTTPClient.swift */; };
+		46E33C8F2AEBFFD6006F007E /* GamesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C8E2AEBFFD6006F007E /* GamesEndpoint.swift */; };
+		46E33C912AEC02A5006F007E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E33C902AEC02A5006F007E /* GameService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +63,12 @@
 		46E33C7B2AEAF564006F007E /* FeaturedGameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedGameItem.swift; sourceTree = "<group>"; };
 		46E33C7D2AEAF5A3006F007E /* FeaturedMovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMovieItemView.swift; sourceTree = "<group>"; };
 		46E33C7F2AEAF63C006F007E /* FeaturedBookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBookItem.swift; sourceTree = "<group>"; };
+		46E33C842AEBF1DD006F007E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		46E33C862AEBF2C0006F007E /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		46E33C882AEBF4E1006F007E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		46E33C8A2AEBF7F5006F007E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		46E33C8E2AEBFFD6006F007E /* GamesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesEndpoint.swift; sourceTree = "<group>"; };
+		46E33C902AEC02A5006F007E /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 		46E33C3B2AEAA32E006F007E /* PublixMedia */ = {
 			isa = PBXGroup;
 			children = (
+				46E33C822AEBF10D006F007E /* Networking */,
 				46E33C5E2AEAA520006F007E /* Supporting Views */,
 				46E33C4C2AEAA362006F007E /* Models */,
 				46E33C4B2AEAA35B006F007E /* Utilities */,
@@ -236,6 +249,43 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		46E33C822AEBF10D006F007E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C8D2AEBFF73006F007E /* Endpoints */,
+				46E33C8C2AEBFF62006F007E /* Services */,
+				46E33C832AEBF1B6006F007E /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		46E33C832AEBF1B6006F007E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C842AEBF1DD006F007E /* HTTPMethod.swift */,
+				46E33C862AEBF2C0006F007E /* RequestError.swift */,
+				46E33C882AEBF4E1006F007E /* Endpoint.swift */,
+				46E33C8A2AEBF7F5006F007E /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		46E33C8C2AEBFF62006F007E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C902AEC02A5006F007E /* GameService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		46E33C8D2AEBFF73006F007E /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				46E33C8E2AEBFFD6006F007E /* GamesEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E33C802AEAF63C006F007E /* FeaturedBookItem.swift in Sources */,
+				46E33C8B2AEBF7F5006F007E /* HTTPClient.swift in Sources */,
 				46E33C662AEABB3B006F007E /* MovieDetailView.swift in Sources */,
 				46E33C5B2AEAA4B2006F007E /* MoviesView.swift in Sources */,
 				46E33C5D2AEAA4D8006F007E /* BooksView.swift in Sources */,
@@ -316,13 +367,18 @@
 				46E33C6E2AEAD98C006F007E /* BookDetailView.swift in Sources */,
 				46E33C622AEAAE93006F007E /* DashboardDetailView.swift in Sources */,
 				46E33C7E2AEAF5A3006F007E /* FeaturedMovieItemView.swift in Sources */,
+				46E33C892AEBF4E1006F007E /* Endpoint.swift in Sources */,
+				46E33C912AEC02A5006F007E /* GameService.swift in Sources */,
 				46E33C7A2AEAE803006F007E /* FeaturedMoviesView.swift in Sources */,
 				46E33C3F2AEAA32E006F007E /* ContentView.swift in Sources */,
 				46E33C762AEAE4C5006F007E /* FeaturedBooksView.swift in Sources */,
 				46E33C742AEAE0FD006F007E /* SectionHeaderView.swift in Sources */,
+				46E33C852AEBF1DD006F007E /* HTTPMethod.swift in Sources */,
 				46E33C592AEAA4A7006F007E /* GamesView.swift in Sources */,
+				46E33C8F2AEBFFD6006F007E /* GamesEndpoint.swift in Sources */,
 				46E33C6A2AEABE40006F007E /* DashboardView.swift in Sources */,
 				46E33C722AEAD99D006F007E /* Game.swift in Sources */,
+				46E33C872AEBF2C0006F007E /* RequestError.swift in Sources */,
 				46E33C3D2AEAA32E006F007E /* PublixMediaApp.swift in Sources */,
 				46E33C6C2AEAD982006F007E /* GameDetailView.swift in Sources */,
 				46E33C702AEAD995006F007E /* Book.swift in Sources */,

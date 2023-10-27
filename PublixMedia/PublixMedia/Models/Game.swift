@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum GameStatusType: String {
+enum GameStatusType: String, Decodable {
     case available = "Available"
     case soon = "Coming Soon"
     case none
 }
 
-struct Game: Identifiable, Hashable {
-    let id = UUID()
+struct Game: Identifiable, Hashable, Decodable {
+    var id = UUID()
     
     var name: String
     var status: GameStatusType
