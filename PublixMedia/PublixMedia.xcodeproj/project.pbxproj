@@ -79,6 +79,7 @@
 		46E33C962AEC270D006F007E /* BooksEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksEndpoint.swift; sourceTree = "<group>"; };
 		46E33C982AEC2715006F007E /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
 		46E33C9A2AEC2747006F007E /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		46E33C9C2AEC3F37006F007E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 		46E33C3B2AEAA32E006F007E /* PublixMedia */ = {
 			isa = PBXGroup;
 			children = (
+				46E33C9C2AEC3F37006F007E /* Info.plist */,
 				46E33C822AEBF10D006F007E /* Networking */,
 				46E33C5E2AEAA520006F007E /* Supporting Views */,
 				46E33C4C2AEAA362006F007E /* Models */,
@@ -539,6 +541,7 @@
 				DEVELOPMENT_TEAM = BCKVL9BZPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PublixMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,6 +571,7 @@
 				DEVELOPMENT_TEAM = BCKVL9BZPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PublixMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
